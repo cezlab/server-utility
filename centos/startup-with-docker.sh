@@ -2,7 +2,7 @@ yum update -y
 yum install nano git yum-utils htop -y
 yum remove docker docker-client docker-client-latest docker-common docker-latest docker-latest-logrotate docker-logrotate docker-engine -y
 yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo -y
-yum install docker-ce docker-ce-cli containerd.io
+yum install docker-ce docker-ce-cli containerd.io -y
 systemctl start docker
 systemctl status docker
 systemctl enable docker
